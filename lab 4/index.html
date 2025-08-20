@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SR University | National Technical Symposium</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a202c;
+            color: #e2e8f0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 1rem;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #a0aec0;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation Header -->
+    <header class="bg-gray-800 shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+            <a href="#" class="text-xl font-bold text-teal-400">SR University</a>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#home" class="text-gray-300 hover:text-white transition-colors duration-300">Home</a></li>
+                <li><a href="#about" class="text-gray-300 hover:text-white transition-colors duration-300">About</a></li>
+                <li><a href="#speakers" class="text-gray-300 hover:text-white transition-colors duration-300">Speakers</a></li>
+                <li><a href="#schedule" class="text-gray-300 hover:text-white transition-colors duration-300">Schedule</a></li>
+                <li><a href="#contact" class="text-gray-300 hover:text-white transition-colors duration-300">Contact</a></li>
+            </ul>
+            <!-- Mobile Menu Button -->
+            <button id="menu-button" class="md:hidden text-gray-300 hover:text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800">
+            <ul class="flex flex-col items-center py-4 space-y-2">
+                <li><a href="#home" class="block py-2 text-gray-300 hover:text-white">Home</a></li>
+                <li><a href="#about" class="block py-2 text-gray-300 hover:text-white">About</a></li>
+                <li><a href="#speakers" class="block py-2 text-gray-300 hover:text-white">Speakers</a></li>
+                <li><a href="#schedule" class="block py-2 text-gray-300 hover:text-white">Schedule</a></li>
+                <li><a href="#contact" class="block py-2 text-gray-300 hover:text-white">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="relative bg-cover bg-center h-screen flex items-center justify-center text-white"
+            style="background-image: url('https://placehold.co/1920x1080/2d3748/e2e8f0?text=SR+University+Symposium');">
+            <div class="absolute inset-0 bg-black opacity-60"></div>
+            <div class="relative z-10 text-center px-4">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight tracking-wide mb-4">
+                    National Technical Symposium
+                </h1>
+                <p class="text-lg md:text-2xl font-light mb-8">
+                    Bringing together students, researchers, and innovators.
+                </p>
+                <a href="#contact" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-transform duration-300 transform hover:scale-105">
+                    Register Now
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-gray-900">
+            <div class="container text-center">
+                <h2 class="section-title">About the Symposium</h2>
+                <p class="max-w-3xl mx-auto text-gray-400 text-lg mb-8">
+                    The SR University National Technical Symposium is an annual event dedicated to fostering innovation and collaboration in technology. This year's theme focuses on the intersection of AI, sustainability, and data science, offering a platform for sharing ground-breaking research and real-world applications.
+                </p>
+                <a href="#" class="inline-block bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-6 rounded-lg transition-colors duration-300">
+                    Learn More
+                </a>
+            </div>
+        </section>
+
+        <!-- Speakers Section -->
+        <section id="speakers" class="py-20">
+            <div class="container">
+                <h2 class="section-title">Keynote Speakers</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- Speaker 1 -->
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://placehold.co/600x400/3182CE/FFFFFF?text=Dr.+A.+Sharma" alt="Dr. A. Sharma" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold mb-2 text-teal-300">Dr. Anika Sharma</h3>
+                            <p class="text-sm text-gray-400 mb-4">Lead Researcher, Quantum Computing Lab</p>
+                            <p class="text-gray-400 text-sm">A pioneer in the field of quantum algorithms, Dr. Sharma will discuss the future of computational power.</p>
+                        </div>
+                    </div>
+
+                    <!-- Speaker 2 -->
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://placehold.co/600x400/3182CE/FFFFFF?text=Mr.+B.+Singh" alt="Mr. B. Singh" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold mb-2 text-teal-300">Mr. Bharat Singh</h3>
+                            <p class="text-sm text-gray-400 mb-4">CEO, Sustainable Tech Solutions</p>
+                            <p class="text-gray-400 text-sm">Mr. Singh will share his expertise on developing environmentally conscious technology solutions for the modern world.</p>
+                        </div>
+                    </div>
+
+                    <!-- Speaker 3 -->
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://placehold.co/600x400/3182CE/FFFFFF?text=Ms.+C.+Reddy" alt="Ms. C. Reddy" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold mb-2 text-teal-300">Ms. Chethana Reddy</h3>
+                            <p class="text-sm text-gray-400 mb-4">Data Scientist, Global Innovations Inc.</p>
+                            <p class="text-gray-400 text-sm">A renowned expert in machine learning, Ms. Reddy's session will cover the latest trends in predictive analytics.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Schedule Section -->
+        <section id="schedule" class="py-20 bg-gray-900">
+            <div class="container">
+                <h2 class="section-title">Event Schedule</h2>
+                <div class="max-w-4xl mx-auto bg-gray-800 rounded-lg shadow-lg p-6">
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full text-left text-sm text-gray-400">
+                            <thead class="uppercase">
+                                <tr class="bg-gray-700 text-gray-200">
+                                    <th scope="col" class="py-3 px-6 rounded-tl-lg">Time</th>
+                                    <th scope="col" class="py-3 px-6">Event</th>
+                                    <th scope="col" class="py-3 px-6">Speaker</th>
+                                    <th scope="col" class="py-3 px-6 rounded-tr-lg">Track</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-gray-700 hover:bg-gray-700 transition-colors duration-300">
+                                    <td class="py-4 px-6">09:00 AM</td>
+                                    <td class="py-4 px-6">Registration & Welcome</td>
+                                    <td class="py-4 px-6">Dean's Office</td>
+                                    <td class="py-4 px-6">Main Hall</td>
+                                </tr>
+                                <tr class="border-b border-gray-700 hover:bg-gray-700 transition-colors duration-300">
+                                    <td class="py-4 px-6">10:00 AM</td>
+                                    <td class="py-4 px-6">Keynote: Future of AI</td>
+                                    <td class="py-4 px-6">Dr. Anika Sharma</td>
+                                    <td class="py-4 px-6">Auditorium A</td>
+                                </tr>
+                                <tr class="border-b border-gray-700 hover:bg-gray-700 transition-colors duration-300">
+                                    <td class="py-4 px-6">11:30 AM</td>
+                                    <td class="py-4 px-6">Panel Discussion: Tech & Sustainability</td>
+                                    <td class="py-4 px-6">Various</td>
+                                    <td class="py-4 px-6">Auditorium B</td>
+                                </tr>
+                                <tr class="hover:bg-gray-700 transition-colors duration-300">
+                                    <td class="py-4 px-6">01:00 PM</td>
+                                    <td class="py-4 px-6">Networking Lunch</td>
+                                    <td class="py-4 px-6">---</td>
+                                    <td class="py-4 px-6">Cafeteria</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20">
+            <div class="container">
+                <h2 class="section-title">Contact Us</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Contact Form -->
+                    <div class="bg-gray-800 rounded-lg shadow-lg p-8">
+                        <h3 class="text-xl font-bold mb-4">Get in Touch</h3>
+                        <form action="#" method="POST">
+                            <div class="mb-4">
+                                <label for="name" class="block text-gray-400 mb-2">Name</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-teal-500" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-400 mb-2">Email</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-teal-500" required>
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-400 mb-2">Message</label>
+                                <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-teal-500" required></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Location & Info -->
+                    <div class="bg-gray-800 rounded-lg shadow-lg p-8">
+                        <h3 class="text-xl font-bold mb-4">Location & Details</h3>
+                        <div class="mb-4">
+                            <p class="text-gray-400 font-semibold">Venue:</p>
+                            <p class="text-gray-200">SR University Campus, Main Auditorium</p>
+                        </div>
+                        <div class="mb-4">
+                            <p class="text-gray-400 font-semibold">Date:</p>
+                            <p class="text-gray-200">November 15-16, 2024</p>
+                        </div>
+                        <div class="mb-4">
+                            <p class="text-gray-400 font-semibold">Contact:</p>
+                            <p class="text-gray-200">Email: symposium@sruniversity.edu</p>
+                            <p class="text-gray-200">Phone: +91 12345 67890</p>
+                        </div>
+                        <div class="w-full h-64 bg-gray-700 rounded-lg overflow-hidden">
+                            <!-- Placeholder for a map -->
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15226.791550993086!2d78.4347710385566!3d17.42621455589133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb97479633e721%3A0x86733221c57223f0!2sSR%20University!5e0!3m2!1sen!2sin!4v1715426998651!5m2!1sen!2sin"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-6 text-center text-gray-500 border-t border-gray-700">
+        <p>&copy; 2024 SR University. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for mobile menu toggle -->
+    <script>
+        document.getElementById('menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
