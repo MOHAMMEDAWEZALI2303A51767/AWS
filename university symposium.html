@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova 2024: A National Technical Symposium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .hero-bg {
+            background: linear-gradient(rgba(30, 41, 59, 0.8), rgba(30, 41, 59, 0.8)), url('https://placehold.co/1920x1080/1e293b/ffffff?text=Tech+Event');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-slate-800">
+
+    <!-- Navigation Bar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-900/90 backdrop-blur-md shadow-lg">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#hero" class="text-xl font-bold text-white tracking-wide">TechNova 2024</a>
+            <div class="hidden md:flex space-x-6 text-white text-sm font-medium">
+                <a href="#about" class="hover:text-amber-400 transition-colors">About</a>
+                <a href="#events" class="hover:text-amber-400 transition-colors">Events</a>
+                <a href="#speakers" class="hover:text-amber-400 transition-colors">Speakers</a>
+                <a href="#schedule" class="hover:text-amber-400 transition-colors">Schedule</a>
+                <a href="#contact" class="hover:text-amber-400 transition-colors">Contact</a>
+            </div>
+            <a href="#register" class="hidden md:inline-block bg-amber-500 text-white font-semibold py-2 px-4 rounded-full hover:bg-amber-600 transition-colors">
+                Register Now
+            </a>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900/90 text-center py-4 text-white">
+            <a href="#about" class="block py-2 hover:bg-slate-800 transition-colors">About</a>
+            <a href="#events" class="block py-2 hover:bg-slate-800 transition-colors">Events</a>
+            <a href="#speakers" class="block py-2 hover:bg-slate-800 transition-colors">Speakers</a>
+            <a href="#schedule" class="block py-2 hover:bg-slate-800 transition-colors">Schedule</a>
+            <a href="#contact" class="block py-2 hover:bg-slate-800 transition-colors">Contact</a>
+            <a href="#register" class="block mt-4 mx-4 bg-amber-500 py-2 px-4 rounded-full hover:bg-amber-600 transition-colors">
+                Register Now
+            </a>
+        </div>
+    </header>
+
+    <main class="pt-16">
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero-bg text-white text-center py-32 md:py-48 flex items-center justify-center">
+            <div class="px-4">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-4 animate-fade-in-down">TechNova 2024</h1>
+                <p class="text-xl md:text-2xl font-light max-w-2xl mx-auto mb-8 animate-fade-in">Innovate. Connect. Transform.</p>
+                <div class="space-x-4">
+                    <a href="#register" class="bg-amber-500 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-amber-600 transition-colors text-lg">
+                        Get Your Pass
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="container mx-auto px-4 py-16 md:py-24">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">About the Symposium</h2>
+                <p class="max-w-3xl mx-auto text-slate-600">
+                    TechNova 2024 is a national-level technical symposium organized by the Department of Computer Science. Our mission is to provide a platform for students, researchers, and professionals to share knowledge, explore emerging technologies, and foster a spirit of innovation.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <h3 class="font-semibold text-xl mb-2">Knowledge Exchange</h3>
+                    <p class="text-slate-600 text-sm">Present research papers, attend expert talks, and learn from the best in the industry.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <h3 class="font-semibold text-xl mb-2">Networking</h3>
+                    <p class="text-slate-600 text-sm">Connect with peers, industry leaders, and potential collaborators from across the country.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <h3 class="font-semibold text-xl mb-2">Innovation</h3>
+                    <p class="text-slate-600 text-sm">Participate in challenging competitions like hackathons and project expos to showcase your skills.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events Section -->
+        <section id="events" class="bg-gray-100 py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Symposium Tracks & Events</h2>
+                    <p class="max-w-3xl mx-auto text-slate-600">A diverse range of events tailored to ignite your passion for technology.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Event 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 class="font-bold text-xl mb-2 text-amber-500">Paper Presentation</h3>
+                        <p class="text-slate-600 text-sm">Showcase your research and academic findings to a panel of esteemed judges and peers.</p>
+                    </div>
+                    <!-- Event 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 class="font-bold text-xl mb-2 text-amber-500">Hackathon: CodeSprint</h3>
+                        <p class="text-slate-600 text-sm">Form a team and build innovative solutions to real-world problems in a high-energy environment.</p>
+                    </div>
+                    <!-- Event 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 class="font-bold text-xl mb-2 text-amber-500">Workshops</h3>
+                        <p class="text-slate-600 text-sm">Hands-on sessions on cutting-edge topics like AI/ML, Cybersecurity, and Cloud Computing.</p>
+                    </div>
+                    <!-- Event 4 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 class="font-bold text-xl mb-2 text-amber-500">Poster Session</h3>
+                        <p class="text-slate-600 text-sm">Visually present your projects and research posters to a broad audience.</p>
+                    </div>
+                    <!-- Event 5 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 class="font-bold text-xl mb-2 text-amber-500">Robotics Challenge</h3>
+                        <p class="text-slate-600 text-sm">A thrilling competition to test your robotics design and programming skills.</p>
+                    </div>
+                    <!-- Event 6 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 class="font-bold text-xl mb-2 text-amber-500">Gaming Tournament</h3>
+                        <p class="text-slate-600 text-sm">Compete against the best gamers for prizes and bragging rights.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Speakers Section -->
+        <section id="speakers" class="container mx-auto px-4 py-16 md:py-24">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Esteemed Speakers</h2>
+                <p class="max-w-3xl mx-auto text-slate-600">Learn from the luminaries and innovators shaping the future of technology.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <!-- Speaker 1 -->
+                <div class="p-4 bg-white rounded-lg shadow-lg">
+                    <img src="https://placehold.co/150x150/e2e8f0/1e293b?text=Speaker1" alt="Speaker 1" class="rounded-full mx-auto mb-4 w-24 h-24 object-cover">
+                    <h3 class="font-bold text-lg">Dr. Jane Smith</h3>
+                    <p class="text-sm text-slate-600">Chief AI Scientist, TechCorp</p>
+                </div>
+                <!-- Speaker 2 -->
+                <div class="p-4 bg-white rounded-lg shadow-lg">
+                    <img src="https://placehold.co/150x150/e2e8f0/1e293b?text=Speaker2" alt="Speaker 2" class="rounded-full mx-auto mb-4 w-24 h-24 object-cover">
+                    <h3 class="font-bold text-lg">John Davis</h3>
+                    <p class="text-sm text-slate-600">Senior Software Engineer, InnovateX</p>
+                </div>
+                <!-- Speaker 3 -->
+                <div class="p-4 bg-white rounded-lg shadow-lg">
+                    <img src="https://placehold.co/150x150/e2e8f0/1e293b?text=Speaker3" alt="Speaker 3" class="rounded-full mx-auto mb-4 w-24 h-24 object-cover">
+                    <h3 class="font-bold text-lg">Maria Rodriguez</h3>
+                    <p class="text-sm text-slate-600">Cybersecurity Expert, SecureByte</p>
+                </div>
+                <!-- Speaker 4 -->
+                <div class="p-4 bg-white rounded-lg shadow-lg">
+                    <img src="https://placehold.co/150x150/e2e8f0/1e293b?text=Speaker4" alt="Speaker 4" class="rounded-full mx-auto mb-4 w-24 h-24 object-cover">
+                    <h3 class="font-bold text-lg">Dr. Alan Turing</h3>
+                    <p class="text-sm text-slate-600">Theoretical Computer Scientist</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Schedule Section -->
+        <section id="schedule" class="bg-gray-100 py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Event Schedule</h2>
+                    <p class="max-w-3xl mx-auto text-slate-600">Plan your day and make sure you don't miss a thing.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg max-w-4xl mx-auto">
+                    <ul class="space-y-6">
+                        <li class="relative pl-10">
+                            <div class="absolute w-2 h-2 bg-amber-500 rounded-full left-0 top-1.5 animate-pulse"></div>
+                            <span class="font-semibold text-slate-900">9:00 AM - 9:30 AM</span>
+                            <p class="text-sm text-slate-600">Registration & Welcome Kit Distribution</p>
+                        </li>
+                        <li class="relative pl-10">
+                            <div class="absolute w-2 h-2 bg-amber-500 rounded-full left-0 top-1.5"></div>
+                            <span class="font-semibold text-slate-900">9:30 AM - 10:00 AM</span>
+                            <p class="text-sm text-slate-600">Inaugural Ceremony & Welcome Address</p>
+                        </li>
+                        <li class="relative pl-10">
+                            <div class="absolute w-2 h-2 bg-amber-500 rounded-full left-0 top-1.5"></div>
+                            <span class="font-semibold text-slate-900">10:00 AM - 11:30 AM</span>
+                            <p class="text-sm text-slate-600">Keynote Speech by Dr. Jane Smith</p>
+                        </li>
+                        <li class="relative pl-10">
+                            <div class="absolute w-2 h-2 bg-amber-500 rounded-full left-0 top-1.5"></div>
+                            <span class="font-semibold text-slate-900">11:30 AM - 1:00 PM</span>
+                            <p class="text-sm text-slate-600">Paper Presentations & Workshops (Parallel Sessions)</p>
+                        </li>
+                        <li class="relative pl-10">
+                            <div class="absolute w-2 h-2 bg-amber-500 rounded-full left-0 top-1.5"></div>
+                            <span class="font-semibold text-slate-900">1:00 PM - 2:00 PM</span>
+                            <p class="text-sm text-slate-600">Lunch Break</p>
+                        </li>
+                        <li class="relative pl-10">
+                            <div class="absolute w-2 h-2 bg-amber-500 rounded-full left-0 top-1.5"></div>
+                            <span class="font-semibold text-slate-900">2:00 PM - 4:00 PM</span>
+                            <p class="text-sm text-slate-600">Hackathon & Robotics Challenge</p>
+                        </li>
+                        <li class="relative pl-10">
+                            <div class="absolute w-2 h-2 bg-amber-500 rounded-full left-0 top-1.5"></div>
+                            <span class="font-semibold text-slate-900">4:00 PM - 4:30 PM</span>
+                            <p class="text-sm text-slate-600">High Tea & Networking</p>
+                        </li>
+                        <li class="relative pl-10">
+                            <div class="absolute w-2 h-2 bg-amber-500 rounded-full left-0 top-1.5"></div>
+                            <span class="font-semibold text-slate-900">4:30 PM - 5:30 PM</span>
+                            <p class="text-sm text-slate-600">Valedictory Ceremony & Prize Distribution</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Registration/Contact Section -->
+        <section id="register" class="container mx-auto px-4 py-16 md:py-24">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Join Us!</h2>
+                <p class="max-w-3xl mx-auto text-slate-600">Secure your spot at TechNova 2024. Fill out the form below to register.</p>
+            </div>
+            <div class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+                <form id="registration-form" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                        <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-amber-500 focus:ring-amber-500 sm:text-sm p-2" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                        <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-amber-500 focus:ring-amber-500 sm:text-sm p-2" required>
+                    </div>
+                    <div>
+                        <label for="university" class="block text-sm font-medium text-gray-700">University / Organization</label>
+                        <input type="text" id="university" name="university" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-amber-500 focus:ring-amber-500 sm:text-sm p-2" required>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700">Your Message (optional)</label>
+                        <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-amber-500 focus:ring-amber-500 sm:text-sm p-2"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="w-full bg-amber-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-amber-600 transition-colors">
+                            Submit Registration
+                        </button>
+                    </div>
+                </form>
+                <div id="status-message" class="mt-4 text-center hidden"></div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-slate-900 text-white py-8">
+            <div class="container mx-auto px-4 text-center text-sm">
+                <p>&copy; 2024 TechNova. All rights reserved.</p>
+                <p class="mt-2">Organized by the Department of Computer Science</p>
+            </div>
+        </footer>
+
+    </main>
+
+    <script>
+        // Mobile menu functionality
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Simple form submission handler
+        document.getElementById('registration-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const statusMessage = document.getElementById('status-message');
+            statusMessage.classList.remove('hidden');
+            statusMessage.classList.remove('text-red-500');
+            statusMessage.classList.add('text-green-500');
+            statusMessage.textContent = 'Thank you for your interest! Your registration has been submitted.';
+            setTimeout(() => {
+                statusMessage.classList.add('hidden');
+                statusMessage.textContent = '';
+            }, 5000);
+        });
+    </script>
+
+</body>
+
+</html>
